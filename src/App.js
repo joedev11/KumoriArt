@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/categories' element={<Collections />} />
+          <Route path='/collections' element={<Collections />} />
           <Route path='/popular' element={<Popular />} />
         </Routes>
       </BrowserRouter>
