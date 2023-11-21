@@ -46,22 +46,22 @@ const GetPhotos = ({ query }) => {
   return (
     <div>
       {/* Render or use the fetched images within the component */}
-      <div className="flex flex-wrap gap-3 items-center justify-center">
+      <div className="flex flex-wrap items-center justify-center gap-3">
         {photos.map((item) => (
           <div key={item.id} className="relative">
             {/* Adjust this based on the structure of the Unsplash API response */}
             <img
               src={item.urls.small}
               alt={item.alt_description}
-              className="w-full h-full object-cover cursor-pointer"
+              className="object-cover w-full h-full cursor-pointer"
               onClick={() => fetchPhotoData(item.id)} // Pass the photo ID to fetchPhotoData
             />
             {/* Show the zoomed image in a modal or overlay */}
             {selectedPhoto && (
-              <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-200/25">
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-zinc-700/10">
                 <div className="max-w-screen-xl overflow-hidden">
                   <img src="./Images/x.png" alt="x" onClick={closeZoomedPhoto} className="absolute left-[140px] top-[80px] h-12" />
-                  <img src={selectedPhoto} alt="Zoomed" className="w-full h-full object-contain" />
+                  <img src={selectedPhoto} alt="Zoomed" className="object-contain w-full h-full" />
                 </div>
               </div>
             )}

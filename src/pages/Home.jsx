@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import GetPhotos from '../components/Api/GetPhotos';
 
-const Index = () => {
+const Home = () => {
   const [query, setQuery] = useState('Wallpapers');
 
   const handleSearchQuery = (newQuery) => {
@@ -14,11 +14,11 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className="w-screen">
       <Navbar query={query} onSearchQuery={handleSearchQuery}/>
       <GetPhotos query={query}/>  
     </div>
   );
 };
 
-export default Index;
+export default Home;
