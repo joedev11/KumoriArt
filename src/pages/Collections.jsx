@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/Navbar'
 import GetCollections from '../components/Api/GetCollections'
 
 const Collections = () => {
-  const [query, setQuery] = useState('explore')
+  const [query, setQuery] = useState('Search')
 
   const handleSearchQuery = (newQuery) => {
     setQuery(newQuery);
