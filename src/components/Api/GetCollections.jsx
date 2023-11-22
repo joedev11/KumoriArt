@@ -23,15 +23,15 @@ const GetCollections = ({ query }) => {
         fetchCollections();
     }, [query])
   return (
-    <div className='mx-[150px] my-9'>
-        <div className='mx-24 mb-9'>
-            <h1 className='text-6xl font-medium'>Collections</h1>
-            <p className='mt-1 text-xl'>Explore collections from authors around the world.</p>
+    <div className='mx-7 lg:mx-[150px] my-9'>
+        <div className='lg:mx-24 mb-9'>
+            <h1 className='text-4xl font-medium lg:text-6xl'>Collections</h1>
+            <p className='mt-1 text-lg lg:text-xl'>Explore collections from authors around the world.</p>
         </div>
-        <div className='flex flex-wrap items-center justify-center gap-6'>
+        <div className='flex flex-wrap items-center justify-center gap-5'>
             {collections.map((item) => (
                 <div key={item.id} className="">
-                    <div className="flex w-[450px] h-[300px]">
+                    <div className="flex lg:w-[450px] w-[320px] h-[210px] lg:h-[300px]">
                         <img src={item.preview_photos[0].urls.small} alt="" className="h-full w-[65%] object-fill"/>
                         <div>
                             <img src={item.preview_photos[1].urls.small_s3} alt="" className='h-[50%] w-full object-none'/>
