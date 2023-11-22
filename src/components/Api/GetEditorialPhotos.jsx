@@ -48,7 +48,7 @@ const GetPhotos = ({ query }) => {
   };
 
   return (
-    <div className="mx-[150px] w-[80%]">
+    <div className="mx-auto w-[80%]">
       <div className="mx-24 my-9">
         <h1 className="text-6xl font-medium">Popular Today</h1>
         <p className="mt-1 text-xl">

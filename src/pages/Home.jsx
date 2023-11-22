@@ -17,8 +17,10 @@ const Home = () => {
   return (
     <div className="w-screen">
       <Navbar query={query} onSearchQuery={handleSearchQuery}/>
-      <GetEditorialPhotos /> 
-      <div className="py-3 mt-9 bg-zinc-100">
+      <div className=''>
+        <GetEditorialPhotos /> 
+      </div>
+      <div className="py-3 mx-auto mt-9 bg-zinc-50">
         <GetCollections query={query}/>
       </div> 
     </div>
