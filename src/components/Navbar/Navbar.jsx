@@ -21,7 +21,7 @@ const Navbar = ({query, onSearchQuery}) => {
             <Link to='/home' className="flex-auto text-center">HOME</Link>
             <Link to='/popular' className="flex-auto text-center">POPULAR</Link>
             <Link to='/collections' className="flex-auto text-center">COLLECTIONS</Link>
-            <Link to='/photos' className="flex-auto text-center">PHOTOS</Link>
+            <Link to='/authors' className="flex-auto text-center">AUTHORS</Link>
         </div>
     </section>
   )

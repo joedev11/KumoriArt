@@ -11,7 +11,7 @@ const GetCollections = ({ query }) => {
                     params: {
                         client_id: 'BbjIXeTs0E3IY1J7mgDQgYdOWK6rY0nM3yRhUKmz7-c',
                         query: query,
-                        per_page: 20,
+                        per_page: 21,
                     }
                 })
                 setCollections(response.data.results);
@@ -23,7 +23,7 @@ const GetCollections = ({ query }) => {
         fetchCollections();
     }, [query])
   return (
-    <div className='mx-[150px] mt-9'>
+    <div className='mx-[150px] my-9'>
         <div className='mx-24 mb-9'>
             <h1 className='text-6xl font-medium'>Collections</h1>
             <p className='mt-1 text-xl'>Explore collections from authors around the world.</p>
